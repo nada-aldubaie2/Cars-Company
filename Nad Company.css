@@ -1,0 +1,262 @@
+:root{
+    --white-color:#ffffff;
+    --main-color:#d9d9d9;
+    --grey-color:#81818187;
+    --black-color:#000000;
+    --h2-color:#4e4b4b;
+    --team-car-color:#d9d9d9b3;
+    --dark-color:rgb(49, 48, 48);
+}
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+  
+    box-sizing: border-box;
+    background-color: var(--main-color);
+
+}
+/* Start Navbar */
+.navbar{
+    background-color: var(--main-color);
+}
+.m-logo{
+    box-shadow: 2px 4px 17px black;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+.nav-hover:hover{
+   background-color: rgb(61, 61, 53);
+   transition-delay: .1s;
+   border-radius: 20px;
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   -ms-border-radius: 20px;
+   -o-border-radius: 20px;
+}
+.nav-link:hover{
+    color:var(--white-color) !important;
+}
+.form-control:focus{
+    outline: none !important;
+}
+.nav-flex{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center;
+    margin: 0px !important;
+}
+ /* .border1{
+    border-bottom: 3px solid #000000 !important;
+    top: -40%;
+} */
+/* End Navbar */
+
+/* Main Headline */
+
+.img-head{
+    position: relative;
+    background-color: var(--grey-color);
+   width: 100%;
+   height: 100% ;
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-image: url('images/se-image-4799f9106491ebb58ca3351f6df5c44a.jpg');
+   opacity: .5;
+   height: 75vh;
+ }
+ 
+ .text{
+    position: absolute;
+    color: var(--black-color);
+    left: 3%;
+    top: 0%px;
+    margin-top: 10px;
+    padding: 5px;
+    line-height: 21px;
+    transform:translate(0% , 45%);
+    -webkit-transform:translate(0% , 45%);
+    -moz-transform:translate(0% , 45%);
+    -ms-transform:translate(0% , 45%);
+    -o-transform:translate(0% , 45%);
+    animation: txt 2s ease-in 1  alternate ;
+    -webkit-animation: txt 2s ease-in 1  alternate ;
+}
+@keyframes txt{
+    0%{
+        left: -20%;
+    }
+    50%{
+        left: -10%;
+        letter-spacing: 5px;
+     }
+    80%{
+        left: -5%;
+        letter-spacing: 3px;
+     }
+    100%{
+       left: 3%;
+    }
+}
+/* End Headline */
+.welcome h2{
+    color:var(--h2-color);
+}
+/* Start Cars Team */
+.team p{
+    color: var(--main-color);
+}
+.team .box{
+    overflow: hidden;
+    position: relative;
+}
+.team .box::before{
+    content: attr(car-name);
+    position: absolute;
+    background-color: var(--team-car-color);
+    width: 100%;
+    height: 100%  ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    font-size: 1.5rem;
+    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+}
+.team .box:hover::before {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+}
+.team .Lexus{
+    overflow: hidden;
+    position: relative;
+}
+/* .team .Lexus p{
+   color: rgb(0, 0, 0);
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   display:none;
+   transform: translate(-50% , -50%);
+   -webkit-transform: translate(-50% , -50%);
+   -moz-transform: translate(-50% , -50%);
+   -ms-transform: translate(-50% , -50%);
+   -o-transform: translate(-50% , -50%);
+}
+.team .Lexus p:hover{
+    display:contents;
+} */
+.team .Lexus::before{
+    content: attr(car-name);
+    position: absolute;
+    background-color: var(--team-car-color);
+    width: 100%;
+    height: 100% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    font-size: 1.5rem;
+    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+}
+.team .Lexus:hover::before {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+}
+/* End CarsTeam */
+/* Start Middle */
+.container-type{
+    font-family: "arial";
+    font-size: 24px;
+    display: grid;
+    place-items: center;
+    width: 350px;
+  }
+  
+  .typed {
+    overflow: hidden;
+    white-space: wrap;
+    border-right: 2px solid;
+    width: 0;
+    animation: typing 1.5s steps(20, end)  forwards, blinking 1s infinite;
+    -webkit-animation: typing 1.5s steps(20, end)  forwards, blinking 1s infinite;
+}
+    
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  @keyframes blinking {
+    0% {border-color: transparent}
+    50% {border-color: var(--main-color)}
+    100% {border-color: transparent; }
+  }
+/* End Middle */
+/* Start Footer */
+.footer{
+    background-color: var(--dark-color);
+}
+.footer .copyright > span {
+    color: var(--green-color);
+}
+.footer .copyright div span{
+    color: var(--yellow-color);
+}
+.footer .contact ul svg{
+     width: 20px;
+     height: 20px;
+}
+/* .footer .facebook{
+    background-color: #1877f2;
+}
+.footer .twitter{
+    background-color: #1da1f2;
+}
+.footer .linkedin{
+    background-color: #0077b5;
+}
+.footer .youtube{
+    background-color: #ff0000;
+} */
+.copyright{
+    color: var(--white-color);
+}
+.email{
+    color: var(--main-color);
+}
+/* End Footer */
